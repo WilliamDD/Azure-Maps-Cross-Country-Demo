@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <html>
+
+        <head>
+            <title>Map Route</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            <!-- Add references to the Azure Maps Map control JavaScript and CSS files. -->
+            <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" type="text/css">
+            <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
+
+            <!-- Add a reference to the Azure Maps Services Module JavaScript file. -->
+            <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas-service.min.js"></script>
+            <script src="script.js"></script>
+            <link rel="stylesheet" href="style.css" type="text/css">
+        </head>
+
+        <body onload="InitMap()">
+            <form>
+              <table class="tclass">
+                <tr>
+                  <td align="center">
+                    <h3 class="whitetext">Azure Maps Cross-Country Demo</h3>
+                  </td>
+                  <td width="400px" align="center">
+                    <table class="styled">
+                      <tr>
+                        <td>
+                          <input type="radio" name="rad1" id="west1" checked="checked" />
+                          <label for="west1">Seattle</label>
+                          <input type="radio" name="rad1" id="west2" />
+                          <label for="west2">Portland</label>
+                          <input type="radio" name="rad1" id="west3" />
+                          <label for="west3">San Francisco</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" class="styledButtonS" id="viaChicago" onclick="checkMidpoint()" />
+                          <label for="viaChicago">via Chicago</label>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+          
+                  <td width="200px" align="center">
+                    <input type="button" class="styledButtonL" value="Go..." id="go" onclick="GetMap()" />
+                    <input type="button" class="styledButtonS" value="USHazmatClass2" id="hazmat" onclick="Hazmat()" />
+                  </td>
+          
+                  <td align="center" width="400px">
+                    <table class="styled">
+                      <tr>
+                        <td>
+                          <input type="radio" name="rad2" id="east1" checked="checked" />
+                          <label for="east1">New York</label>
+                          <input type="radio" name="rad2" id="east2" />
+                          <label for="east2">Charleston</label>
+                          <input type="radio" name="rad2" id="east3" />
+                          <label for="east3">Miami</label>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+          
+                  <td width="400px" align="center">
+                    <table class="styled">
+                      <tr>
+                        <td>Truck:</td>
+                        <td id="truckkm"></td>
+                        <td id="truckh"></td>
+                      </tr>
+                      <tr>
+                        <td>Car:</td>
+                        <td id="carkm"></td>
+                        <td id="carh"></td>
+                      </tr>
+                      <tr>
+                        <td>Bicycle:</td>
+                        <td id="bicyclekm"></td>
+                        <td id="bicycleh"></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <hr />
+            </form>
+          
+            <div id="myMap"></div>
+          </body>
+
+
+    </html>

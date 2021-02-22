@@ -1,0 +1,69 @@
+html,
+body {
+width: 100%;
+height: 100%;
+padding: 0;
+margin: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#myMap {
+width: 100%;
+height: 75%;
+}
+
+.tclass {
+border: 5px solid white;
+border-radius: 20px;
+background-color: #1a1a1d;
+width: 100%;
+}
+
+label {
+font-size: 14pt;
+font-weight: bold;
+color: #c3073f;
+}
+
+.whitetext {
+color: antiquewhite;
+}
+
+.styled,
+.styledButtonL,
+.styledButtonS {
+border: 0;
+line-height: 2;
+padding: 0 20px;
+text-align: center;
+color: white;
+text-shadow: 1px 1px 1px #000;
+border-radius: 8px;
+background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px #4e4e50;
+}
+
+.styled {
+font-size: 12pt;
+background-color: #6f2232;
+}
+
+.styledButtonS {
+font-size: 11pt;
+background-color: #4e4e50;
+margin-top: 10px;
+}
+
+.styledButtonL {
+font-size: 18pt;
+background-color: #4e4e50;
+}
+
+.styledButtonL:hover,
+.styledButtonS:hover {
+background-color: #6e6e70;
+}
+
+.styledButtonLX:hover {
+background-color: #c3073f;
+}
